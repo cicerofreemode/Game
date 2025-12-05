@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gaming Portal</title>
+<style>
+body { margin:0; font-family: Arial; background:#0d0d0d; color:white; }
+header { background:#111; padding:20px; text-align:center; box-shadow:0 0 10px cyan; }
+nav a { margin:15px; color:#00eaff; font-size:18px; text-decoration:none; }
+.hero{ text-align:center; padding:80px 20px; }
+.hero h1{ font-size:55px; margin:0; }
+.hero p{ font-size:20px; margin-top:15px; color:#bfbfbf; }
+.games{
+ display:flex; justify-content:center; gap:30px; flex-wrap:wrap; padding:40px;
+}
+.card{
+ background:#1b1b1b; width:280px; padding:20px; border-radius:15px;
+ text-align:center; box-shadow:0 0 15px #00eaff50; transition:0.3s;
+}
+.card:hover{ transform:scale(1.05); box-shadow:0 0 20px #00eaff; }
+.card button{
+ background:#00eaff; border:none; padding:10px 20px; border-radius:10px;
+ font-size:18px; margin-top:15px; cursor:pointer; color:black;font-weight:bold;
+}
+footer{ text-align:center; padding:20px; background:#111; margin-top:40px; color:#888; }
+</style>
+</head>
+<body>
+<header>
+<nav>
+<a href="#">Home</a>
+<a href="#games">Games</a>
+<a href="https://github.com/KumarAyush26/Tic-Tac-Toe" target="_blank">GitHub For Game</a>
+<a href="https://github.com/KumarAyush26/Gaming-Platform" target="_blank">GitHub For This Platform</a>
+</nav>
+</header>
+<section class="hero">
+<h1>Welcome to the Gaming Portal</h1>
+<p>Play fun and interactive browser games created using HTML, CSS & JavaScript</p>
+</section>
+<section id="games" class="games">
+<div class="card">
+<h2>Tic Tac Toe</h2>
+<p>Click below to play this game.</p>
+<button onclick="window.open('https://kumarayush26.github.io/Tic-Tac-Toe/','_blank');">Play Now</button>
+</div>
+</section>
+<footer>
+<p>© 2025 Gaming Portal | Developed by Kumar Ayush</p>
+</footer>
+</body>
+</html>
